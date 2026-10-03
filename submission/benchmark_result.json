@@ -1,0 +1,40 @@
+{
+  "measured_at_utc": "2026-10-03T17:46:19.566789+00:00",
+  "cloud": "AWS",
+  "region": "us-east-1",
+  "instance_type": "t3.medium",
+  "python_version": "3.10.12",
+  "lightgbm_version": "4.7.0",
+  "scikit_learn_version": "1.7.2",
+  "seed": 42,
+  "dataset": {
+    "file": "creditcard.csv",
+    "rows": 284807,
+    "columns": 31,
+    "class_counts": {
+      "0": 284315,
+      "1": 492
+    }
+  },
+  "split": {
+    "train_rows": 170883,
+    "validation_rows": 56962,
+    "test_rows": 56962,
+    "ratio": "60/20/20",
+    "stratified": true
+  },
+  "data_load_seconds": 2.107680562000496,
+  "training_seconds": 2.13748026400026,
+  "best_iteration": 1,
+  "auc_roc": 0.9380946877907043,
+  "accuracy": 0.9990695551420246,
+  "f1": 0.7644444444444445,
+  "precision": 0.6771653543307087,
+  "recall": 0.8775510204081632,
+  "latency_1_row_ms": 1.3478150003720657,
+  "latency_statistic": "median",
+  "latency_repeat_count": 100,
+  "throughput_1000_rows_per_second": 615134.2462919325,
+  "throughput_repeat_count": 10,
+  "inference_scope": "predict_proba only; data already loaded in memory; CSV loading excluded"
+}
