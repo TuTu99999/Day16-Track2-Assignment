@@ -6,5 +6,5 @@
 4. Trên tập test, mô hình đạt AUC-ROC 0,938095; Accuracy 0,999070; F1 0,764444; Precision 0,677165 và Recall 0,877551.
 5. Median latency dự đoán một dòng qua 100 lần đo là 1,348 ms; throughput batch 1.000 dòng qua 10 lần lặp là 615.134,25 dòng/giây. Phép đo chỉ gồm `predict_proba` khi dữ liệu đã nằm trong RAM.
 6. CPU/RAM/Network được quan sát sau benchmark vào khoảng 00:14–00:16 ngày 04/10/2026 (UTC+7); ảnh bằng chứng nằm trong `screenshots/`.
-7. AWS Billing tại 00:17 ngày 04/10/2026 (UTC+7) chưa cập nhật dữ liệu chi phí; ảnh dashboard đúng tháng nằm trong `screenshots/`. Chi phí thực tế có thể xuất hiện muộn sau khi tài nguyên đã được xóa.
+7. AWS Credits/Billing tại 20:58 ngày 04/10/2026 (UTC+7) ghi nhận chi phí ước tính đã dùng là 0,25 USD, với 139,75 USD credit ước tính còn lại trên tổng 140 USD; ảnh dashboard nằm trong `screenshots/`.
 8. Tôi đã tải `benchmark.py`, `benchmark_result.json` và terminal log về laptop; tài nguyên được `terraform destroy` lúc 00:57 04/10/2026 (UTC+7), xác nhận bằng ảnh `screenshots/aws-destroy-complete.png` và `terraform state list` không còn tài nguyên.
